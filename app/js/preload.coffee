@@ -7,7 +7,7 @@ class Preload extends Phaser.State
   constructor: -> super
 
   preload: ->
-    unless @game.device.desktop
+    if !@game.device.desktop && !@game.device.cocoonJS
       @game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL
 
       @game.scale.forceOrientation(false, true)

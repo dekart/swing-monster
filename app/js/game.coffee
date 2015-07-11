@@ -13,7 +13,7 @@ class Game extends Phaser.State
   constructor: -> super
 
   preload: ->
-    @game.time.advancedTiming = true
+    #@game.time.advancedTiming = true
 
   create: ->
     @game.add.sprite(0, 0, 'background')
@@ -53,7 +53,7 @@ class Game extends Phaser.State
 
     @coins.createByData(levels["level_#{ levelNumber }"].coins)
 
-    @player = new Player(@game, @game.world.centerX, 2550, 'a')
+    @player = new Player(@game, @game.world.centerX, 2500, 'a')
 
     @camera.follow(@player, Phaser.Camera.FOLLOW_TOPDOWN)
 
@@ -95,7 +95,7 @@ class Game extends Phaser.State
     if sessionData.level == 1
       @pathImage = @game.add.image(
         Math.round(config.width / 2),
-        400,
+        350,
         "sprites"
         "path.png"
       )
@@ -105,7 +105,7 @@ class Game extends Phaser.State
 
       @initialText = @game.add.image(
         Math.round(config.width / 2),
-        250,
+        200,
         "sprites"
         "tap_to_play.png"
       )
@@ -304,6 +304,6 @@ class Game extends Phaser.State
       @player.body.setZeroRotation()
 
   render: ->
-    @game.debug.text('fps='+(@game.time.fps || '--'), 2, 14, "#00ff00")
+    #@game.debug.text('fps='+(@game.time.fps || '--'), 2, 14, "#00ff00")
 
 module.exports = Game
