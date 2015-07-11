@@ -1,0 +1,78 @@
+{
+  "preload": [
+    {
+      "type": "image",
+      "key": "preloadBar",
+      "url": "assets/img/preload_bar.png"
+    },
+    {
+      "type": "image",
+      "key": "preloadBarWrapper",
+      "url": "assets/img/preload_bar_wrapper.png"
+    }
+  ],
+
+  "main": [
+    {
+      "type": "image",
+      "key": "background",
+      "url": "assets/img/background.png"
+    },
+    {
+      "type": "spritesheet",
+      "key": "monster_a",
+      "url": "assets/img/monster_a.png",
+      "frameWidth": 70,
+      "frameHeight": 76
+    },
+    {
+      "type": "spritesheet",
+      "key": "monster_b",
+      "url": "assets/img/monster_b.png",
+      "frameWidth": 70,
+      "frameHeight": 76
+    },
+    {
+      "type": "spritesheet",
+      "key": "monster_c",
+      "url": "assets/img/monster_c.png",
+      "frameWidth": 70,
+      "frameHeight": 79
+    },
+    {
+      "type": "spritesheet",
+      "key": "monster_d",
+      "url": "assets/img/monster_d.png",
+      "frameWidth": 70,
+      "frameHeight": 88
+    },
+    {
+      "type": "spritesheet",
+      "key": "air_explode",
+      "url": "assets/img/air_explode.png",
+      "frameWidth": 100,
+      "frameHeight": 89
+    },
+    {
+      "type": "spritesheet",
+      "key": "coin",
+      "url": "assets/img/coin.png",
+      "frameWidth": 30,
+      "frameHeight": 37
+    },
+    {
+      "type": "physics",
+      "key": "physicsData",
+      "url": "assets/physics_body.json",
+      "data": null,
+      "format": "LIME_CORONA_JSON"
+    },
+    {
+      "type": "atlasJSONHash",
+      "key": "sprites",
+      "textureURL": "assets/img/sprites.png",
+      "atlasURL": "assets/sprites.json",
+      "atlasData": null
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "swing-game",
+  "version": "1.0.0",
+  "description": "Swing Game",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "npm run test && gulp",
+    "connect": "gulp connect",
+    "test": "gulp lint",
+    "game": "npm run build && gulp connect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chizhov-dee/swing-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chizhov-dee/swing-game/issues"
+  },
+  "homepage": "https://github.com/chizhov-dee/swing-game#readme",
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "Phaser": "global:Phaser"
+  },
+  "coffeelintConfig": {
+    "max_line_length": {
+      "level": "ignore"
+    }
+  },
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "browserify-shim": "^3.8.7",
+    "coffeeify": "^1.1.0",
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-coffeelint": "^0.5.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-uglify": "^1.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
